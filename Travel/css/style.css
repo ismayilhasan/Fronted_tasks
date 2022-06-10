@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    padding: 0 3rem;
+}
+
+#Header{
+    background-color: transparent;
+    position: fixed;
+}
+
+.header-all{
+    display: flex;
+    align-items: center;
+  
+
+}
+
+.navbar{
+    width: 75%;
+    text-align: center;
+}
+
+.navbar a{
+    color: white;
+    font-size: 1rem;
+    margin: 0 10px;
+}
+
+.logo{
+    width: 15%;
+}
+
+.logo img{
+    width: 100%;
+    margin: 0 20px;
+}
+
+.menu{
+    text-align: right;
+}
+
+.menu i{
+    font-size: 20px;
+    color: white;
+}
+
+.book-now{
+    background-color: #BA71DA;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 20px;
+    
+}
+
+#first{
+    background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-2.jpg);
+    background-position: center;
+    
+    background-size: cover;
+    padding-bottom: 18rem;
+}
+
+.first-text{
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.first-text h1{
+    font-size: 60px;
+    color: white;
+}
+
+
+.first-text h3{
+    font-size: 20px;
+    color: white;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+
+
+
+#first form{
+    
+    background-color: white;
+    width: 30%;
+    margin: 30px auto 0;
+ 
+    border-radius: 20px;
+
+    padding: 6px 3px;
+
+}
+
+form select{
+        background-color: transparent;
+        border: none;
+        width: 90%;
+      
+}
+
+.first-all .box{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0 18px;
+    border: 3px solid white;
+    padding: 10px;
+   
+}
+
+.first-all .box img{
+
+    width: 50%;
+    margin-left: 62px;
+  
+}
+
+.first-all{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    
+    margin: 0 auto 40px;
+   
+    
+}
+.first-all .box p{
+    color:white;
+    margin: 50px 0 0 10px ;
+    width: 100%;
+}
+
+#Second
+{
+    background-color: white;
+
+}
+
+.Second-text{
+    text-align: center;
+    margin-top:4rem ;
+}
+
+
+
+.second-all{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.second-all .box{
+    width: 25%;
+    margin: 5px 9px;
+    
+}
+
+.second-all .box img{
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+    
+    
+}
+
+.Next{
+    background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-search-2.jpg?id=1538);
+   background-position: center;
+   background-size: cover;
+   padding: 4rem 0;
+    margin-top: 20px;
+}
+
+.next-text{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    color: white;
+    
+}
+
+.next-text a{
+    padding: 10px 30px;
+    background-color: white;
+    border-radius: 18px;
+    color: red;
+}
+
+.Fourth{
+    width: 100%;
+}
+.top{
+    width: 100%;
+    display: flex;
+   justify-content: center;
+   margin-top: 10px;
+  
+}
+
+.top .left {
+    width: 50%;
+    line-height: 30px;
+    color: gray;
+}
+
+.top .right .box{
+    
+   
+  margin-left: 5rem;
+}
+
+ .right .box img{
+    width: 100%;
+}
+
+.price-all{
+    display: flex;
+    color: gray;
+}
+
+
+.left button{
+    padding: 13px 48px;
+    background-color: #1bbc9b;
+    color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.bottom-all {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+}
+.bottom-all .box{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    
+}
+
+.text-box{
+    line-height: 20px;
+    color: gray;
+    
+}
+
+.bottom-all .box a{
+    color: #14b9d5;
+        
+}
+
+.Discover{
+display: flex;
+}
+
+.Discover .box{
+    width: 50%;
+  
+    
+}
+
+.Discover .box img{
+    width: 100%;
+}
+
+.promotion-all{
+    display: flex;
+    justify-content: space-between;
+}
+.promotion-all .box{
+   width: 30%;
+   padding-bottom: 8rem;
+   background-color: white;  
+   border: 1px lightslategrey solid;
+   margin-top: 40px; 
+}
+
+
+.promotion-all .box img{
+    width: 100%;
+}
+
+.location{
+    margin-left:30px ;
+    text-align: left;
+}
+
+.location p{
+    margin-top: 20px;
+}
+hr{
+   background-color: gray;
+   
+
+}
+ 
+
+.price-area{
+    margin: 30px 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box .lorem {
+   margin: 30px;
+   font-size: 20px;
+   letter-spacing: 2px;
+   color: gray;
+}
+
+.promotion-all .box a{
+    color: white;
+    background-color: #ffd205;
+    border-radius: 20px;
+    padding: 15px 40px;
+    margin:20px 30px 0;
+}
+
+.footer{
+    background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-7.jpg?id=1602);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 20rem;
+    width: 1005;
+}
+
+.footer-text{
+    text-align: center;
+}
