@@ -1,0 +1,526 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    padding: 0 1rem;
+}
+
+
+.container2{
+    padding: 8rem;
+}
+
+.header-phone{
+    display: none;
+}
+
+.header{
+    background-color: #f6f7f8;
+   
+}
+
+
+.header-all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    
+    
+}
+
+.header-all .navbar a{
+    color: #666666;
+}
+
+
+.header-all .navbar a:hover{
+    border-bottom: #666666 1px solid;
+}
+
+
+.navbar :last-child{
+    border-radius: 16px;
+    border: 1px solid blue;
+    padding: 0 12px;
+    background-color: transparent;
+    transition: .5s;
+    color: #0056c1 !important;
+
+}
+
+.navbar :last-child:hover{
+    background-color: #0056c1;
+    color: white !important;
+}
+
+.navbar a{
+    color: black;
+ 
+}
+
+
+.icons{
+    display: flex;
+    justify-content: center;
+    color: black;
+    
+}
+
+.icons .searching{
+    margin-right: 10px;
+}
+
+.icons .language{
+    margin-right: 10px;
+}
+
+.icons .phone{
+    margin-right: 10px;
+
+}
+
+
+.header-phone{
+    padding: 20px 10px;
+    background-color: #f6f7f8;
+}
+
+
+
+.header-phone-all{
+    display: flex;
+    justify-content: space-between;
+}
+
+.right{
+    width: 37%;
+}
+.header-phone-all .right{
+    display: flex;
+    justify-content: space-between;
+}
+
+.First{
+    padding-top: 10px;
+    
+}
+
+.First-all .right {
+    width: 10%;
+}
+
+.First-all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.First-phone{
+    width: 100%;
+    padding: 10px 0;
+    display: none;
+}
+
+.First-phone-all{
+    display: flex;
+    justify-content: space-between;    
+
+}
+
+
+.First-phone-all .left{
+    width: 30%;
+}
+
+.First-phone-all .right{
+    width: 10%;
+    margin-right: 0;
+}
+
+
+
+.First-phone-all .right i{
+    font-size: 30px;
+    color: black;
+   
+}
+
+.left{
+    width: 25%;
+
+}
+
+.left-all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    
+}
+
+     
+
+
+
+.hrefs a{
+    color: black;
+    
+   
+}
+
+.bold-level{
+    font-weight: 700;
+}
+
+.hrefs .gray-level{
+    color: #666666 !important;
+}
+
+.right{
+    color: blue;
+    margin-right: 30px;
+}
+
+.second-all{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Second{
+    padding: 30px 0px;
+    border: 1px solid gray;
+}
+.second-all a{
+    margin-right: 15px;
+    color: black;
+    position: relative;
+}
+
+.second-all a::before{
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    background-color: blue;
+    transition: 0.6s;
+}
+
+.second-all a:hover::before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    background-color: #0056c1;
+    
+}
+
+.Offers{
+    background: linear-gradient(90deg, #E1EBFF 9.88%, #AFB9CD 92.09%);
+    height: 35rem;
+ 
+}
+
+.offers-all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offers-all .offers-text{
+    margin: 40px 0;
+    font-size: 30px;
+   
+}
+
+
+.offers-all .offers-text p{
+    margin: 30px 0;
+}
+
+.offers-text a{
+    padding: 10px 30px;
+    border: 1px solid ;
+    color: black;
+    background-color: transparent;
+    font-size: 17px;
+    border-radius: 7px;
+    transition: 0.5s;
+}
+
+.offers-text a:hover{
+    background-color: #262626;
+    color: white;
+}
+
+.offers-all .img{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+
+.offers-all .img img{
+    width: 100%;
+    
+
+}
+
+/* .Kredits{
+    padding: 6rem 0;
+} */
+
+.kredit-text{
+    padding: 60px 0 30px 18px;
+    font-size: 30px;
+}
+
+.kredit-all{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+
+}
+
+.kredit-all .box{
+    width: 22%;
+    position: relative;
+    margin: 0 16px;
+    padding: 2rem 5rem;
+    border-radius: 8px;
+    background-color:#f6f7f8 ;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.kredit-all .box .box-text{
+  
+    text-align: left;
+    margin-right: 60px;
+    
+    
+    
+}
+
+.kredit-all .box .img{
+    width: 30%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+        
+   
+}
+
+
+
+.card-image{
+    position: absolute;
+    bottom:-5px;
+    right: 0;
+    width: 32%;
+  
+}
+
+.card-image img{
+    width: 100%;
+    height: 246px;  
+}
+
+.kredit-all .box a{
+    padding: 10px 20px;
+    background-color:#3b8ae0;
+    color: white;
+    display: inline-block;
+    border-radius: 9px;
+    margin-top: 20px;
+}
+
+.kredit-all .box .img img{
+    width: 100%;
+    bottom: 0;
+    right: 0;
+}
+
+.kredit-all .box .phone-img {
+    width: 33%;
+     
+    position: absolute;
+    bottom: -4px;
+    right: 1px;
+}
+
+
+.kredit-all .box .phone-img img{
+    width: 100%;
+   
+}
+
+
+
+
+@media (max-width :576px){
+
+  
+    
+    .header-phone{
+        display: block;
+        width: 100%;
+        color: black;
+    }
+
+    .header-phone-all .right{
+        color: gray;
+    }
+
+    .header{
+        display: none;
+    }
+
+    .First{
+        display: none;
+    }
+
+    .First-phone{
+        display: block;
+        width: 100%;
+    }
+
+    .Second{
+        display: none;
+    }
+
+    
+  
+
+    .offers-all {
+        display: flex;
+        flex-direction: column;
+        
+        font-size: 20px;
+        text-align: center;
+     }
+
+     .container2{
+        padding: 0 1rem;
+     }
+
+     .Offers{
+        width: 100%;
+        height: 45rem;
+     }
+
+     .offers-text{
+        width: 600px;
+     }
+
+     .offers-text h3{
+        font-size: 22px;
+        font-weight: bold;
+     }
+
+     .offers-text p{
+        font-size: 15px;
+     }
+
+     .offers-all .img{
+        width: 90%;
+        margin: auto;
+     }
+
+     .offers-all .img img{
+        width: 100%;
+     }
+
+     
+    
+
+     .kredit-all{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+     }
+
+     .kredit-all .box{
+        width:70%;
+        margin-bottom: 20px;
+       
+     }
+
+     .kredit-all .box .img{
+        width: 30%;
+        position: absolute;
+        bottom: 0;
+        right: -47px;     
+    }
+
+
+    .kredit-all .box .img img{
+        width: 70%;
+        overflow: hidden;
+    }
+
+     .kredit-all .box .phone-img {
+        width: 33%;
+         
+        position: absolute;
+        bottom: -4px;
+        right: -81px;
+      
+    }
+
+    .kredit-all .box .phone-img img{
+        width: 53%;
+       
+    }
+    
+    .card-image{
+        position: absolute;
+        bottom:0px;
+        right: -30px;
+        width: 32%;
+    }
+
+    .card-image img{
+        width: 80%;
+        height: 200px; 
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+}
+
+
+
+
+
+
+
