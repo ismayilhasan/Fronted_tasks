@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav a{
+    margin-left: 15px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+
+
+
+#Header{
+    background-color: #212529;
+    padding: 20px 0;
+   
+}
+
+#Header .icon{
+        color: white;
+}
+
+#Header .icon-bar i{
+    padding: 7px 15px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    color: gray;
+    
+}
+
+#Header .icon-bar{
+    display: none;
+}
+
+
+#Get-Start{
+    background-color: #212529;
+    padding: 6rem 0;
+}
+
+#Get-Start p{
+    font-size: 20px;
+}
+
+
+#Get-Start a{
+    color: white;
+    padding: 8px 24px;
+    border-radius: 9px;
+
+    margin-right: 15px;
+    
+}
+
+.Start-a{
+    background-color: #0d6efd;
+}
+.Learn-a{
+    border: 2px solid white;
+    transition: .3s;
+
+}
+
+
+#Learn:hover{
+    color: black;
+    background-color: white;
+ 
+}
+
+#Featured{
+    padding: 8rem 0;
+}
+
+#Featured .box i{
+    color: white;
+    background-color: #0d6efd;
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+
+
+#Featured .box h4{
+    margin: 10px 0;
+}
+
+#Working{
+ background-color: #F8F9FA;
+ padding: 4rem;
+ 
+}
+
+#Working .image img{
+    border-radius: 100%;
+}
+
+#Working p{
+    width: 40%;
+    margin: 0 auto 30px ;
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+
+
+.blog-text{
+    width: 36%;
+    margin: auto;
+    font-size: 16px;
+}
+
+.news-a{
+    color: white;
+    background-color: #0d6efd;
+    padding: 4px 7px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.bottom .bottom-img{
+    margin-right: 20px;
+}
+
+.bottom-text{
+    font-size: 10px;
+}
+
+#Products{
+    width: 100%;
+    background-color: #0d6efd;
+    margin: 5rem 0;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+#Products .left{
+    margin-left: 20px;
+    margin-top: 20px;
+    color: whitesmoke;
+    font-size: 14px;
+}
+
+#Products .right{
+    position: relative;
+}
+
+#Products .right input{
+    width: 340px;
+    padding: 6px 12px;
+    margin-bottom: 13px;
+    
+}
+
+#Products .right button{
+    position: absolute;
+    width: 79px;
+    height: 37px;
+    border-radius: 6px;
+    background-color: #0d6efd;
+    color: white;
+    top:1px;
+    right: 1px;
+}
+
+#Footer{
+    background-color: #212529;
+    padding: 1rem 0;
+}
+
+
+#Footer .left{
+    color: white;
+}
+#Footer .right a{
+    color: white;
+}
+
+@media (max-width:576px) {
+    .links{
+        display: none;
+    }
+    #Header .icon-bar{
+        display: block;
+    }
+    
+    #Get-Start{
+        text-align: center;
+    }
+
+    #Get-Start .box{
+        display: none;
+    }
+
+    #Get-Start .box-text a{
+        display: block;
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+    
+    #Featured .Featured-text h1{
+        font-size: 30px;
+        font-weight: bold;
+
+    }
+
+    #Working p{
+        width: 100%;
+    }
+
+    .blog-text{
+        width: 100%;
+        font-weight: bold;
+    }
+
+
+    #Products .right input {
+        width: 100%;
+    }
+
+    #Products .right p{
+        font-size: 6px;
+    }
+    #Footer .left{
+        text-align: center;
+    }
+
+    #Footer .right{
+        text-align: center;
+    }
+
+}   
