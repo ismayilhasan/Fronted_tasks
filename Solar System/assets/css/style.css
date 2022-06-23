@@ -1,0 +1,167 @@
+body{
+     background-image: url(https://img.freepik.com/free-vector/gradient-galaxy-background_23-2148983655.jpg?t=st=1656024647~exp=1656025247~hmac=f924c1975e873406ed04a8a89d98843a0933ce0ceb42195f7cc038518f4d239c&w=1060);
+    /* background-image: linear-gradient(#59C173,#a17fe0,#5D26C1); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30rem 0;
+}
+
+.sun{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+ 
+    position: absolute;
+    top: 292px;
+    right:727px;
+    
+    animation: sun-move 30s linear  infinite;
+}
+
+@keyframes sun-move {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+.mercury{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    border: 1px solid gray;
+    position: absolute;
+  
+    top: 269px;
+    right:700px;
+    animation: mercury-move 4s linear infinite;
+  
+   
+}
+
+@keyframes mercury-move {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.mercury img{
+    width: 20%;
+    position: absolute;
+    top: -12px  ;
+    left: 50px;
+}
+
+
+.sun img{
+    width: 100%
+}
+
+.earth{
+    height: 350px;
+    width: 350px;
+    border-radius: 100%;
+    border: 1px solid gray ;
+    position: absolute;
+    top: 210px;
+    left: 537px;
+    animation: earth-move 14s linear infinite;
+    /* animation: earth-move 5s linear infinite; */
+}
+
+@keyframes earth-move {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.earth img{
+    width: 20%;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    
+}
+
+
+
+
+.mars
+{
+    height: 480px;
+    width: 480px;
+    border-radius: 100%;
+    border: 1px solid black ;
+    position: absolute;
+    top: 157px;
+    left: 475px;
+    
+    animation: mars-move 11s linear infinite;
+}
+
+@keyframes mars-move {
+    from{
+        transform: rotate(0);
+    }
+
+    to{
+       transform: rotate(360deg);
+    }
+}
+
+.mars img{
+    width: 20%;
+    position: absolute;
+    bottom: 68px;
+    left: -0px;
+}
+
+
+
+.saturn
+{
+    height: 600px;
+    width: 600px;
+    border-radius: 100%;
+    border: 1px solid black ;
+    position: absolute;
+    top: 109px;
+    left: 414px;
+    animation: saturn-move 20s ease-in  infinite;
+
+}
+
+
+
+@keyframes saturn-move {
+    from{
+        transform: rotate(0);
+    }
+
+    to{
+       transform: rotate(360deg);
+    }
+}
+
+.saturn img{
+    width: 25%;
+    position: absolute;
+    bottom: 68px;
+    right: -9px;
+    
+}
