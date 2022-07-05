@@ -1,0 +1,19 @@
+p{
+    margin: 10px 40px;
+}
+
+#mode{
+    padding: 10px;
+    font-size: 20px;
+    color: blue ;
+    background: black;
+    border-radius: 100%;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+}
+
+body{
+    transition: .5s;
+}
