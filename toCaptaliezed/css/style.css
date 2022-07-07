@@ -1,0 +1,17 @@
+
+
+h1{
+    text-align: center;
+    background-color: rgb(218, 147, 15);
+}
+
+.all{
+    width: 50%;
+    margin: 5rem auto;
+}
+
+
+input{
+    width: 80%;
+    margin: 10px 0;
+}
