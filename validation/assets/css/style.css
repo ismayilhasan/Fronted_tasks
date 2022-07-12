@@ -1,0 +1,15 @@
+#form {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: 5rem auto;
+  background-color: wheat;
+}
+#form input {
+  margin: 10px 0;
+  width: 80%;
+  margin: 10px auto;
+}
+#form h1 {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
