@@ -67,6 +67,7 @@ function ShowAlert()
         <input type="number" id = "count_cc" value = "${x.count}" style="width: 45%; height: 40px;" onchange="calcCount()">
         </td>
         <td>${Number(total_price)}</td>
+        <td> <button class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button></td>
     </tr>
         `
     });
