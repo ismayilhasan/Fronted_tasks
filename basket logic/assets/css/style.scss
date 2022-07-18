@@ -1,0 +1,61 @@
+a{
+    text-decoration: none;
+}
+
+
+#header{
+    background-color: green;
+
+
+    .brand{
+        h1{
+            color: white;
+        }
+    }
+    .icon{
+        i{
+            font-size: 25px;
+            color: #fff;
+            position: relative;
+
+            span{
+                font-size: 16px;
+                position: absolute;
+                color: green;
+                top: -11px;
+                right: -17px;
+                background-color: white;
+                padding: 2px 4px;
+                border-radius: 100%;
+                
+
+            }
+        }
+
+    }
+    
+}
+
+#Product{
+
+
+
+    img{
+        height: 240px;
+        object-fit: contain;
+    }
+}
+
+
+#table_section{
+    img{
+        width: 25%;
+    }
+
+    input{
+        width: 25%;
+    }
+    h1{
+        font-size: 20px;
+    }
+}

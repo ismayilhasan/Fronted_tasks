@@ -1,0 +1,41 @@
+a {
+  text-decoration: none;
+}
+
+#header {
+  background-color: green;
+}
+#header .brand h1 {
+  color: white;
+}
+#header .icon i {
+  font-size: 25px;
+  color: #fff;
+  position: relative;
+}
+#header .icon i span {
+  font-size: 16px;
+  position: absolute;
+  color: green;
+  top: -11px;
+  right: -17px;
+  background-color: white;
+  padding: 2px 4px;
+  border-radius: 100%;
+}
+
+#Product img {
+  height: 240px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#table_section img {
+  width: 25%;
+}
+#table_section input {
+  width: 25%;
+}
+#table_section h1 {
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */
