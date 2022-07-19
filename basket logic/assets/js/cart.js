@@ -7,31 +7,25 @@ basket.forEach(x => {
 
 
 
+var delete_btns = document.querySelectorAll('#btn_delete')
+    
 function calcCount()
 {
     let basket = JSON.parse(localStorage.getItem('basket'))
     let input_count_value = document.querySelector('#count_cc').value;
 
     basket.forEach(x => {
-        x.count = 0
+        x.count = 0;
         
         
-       ;
+       
 
         x.count = Number(input_count_value);
         
-        total_price = Number(x.count) * Number(x.price)
+        let total_price = x.count * x.price
+        x.total_price = total_price
+        basket.push()
         
-
-    //     basket.push({
-    //     id: product_id,
-    //     name:prodcut_name,
-    //     img : product_img,
-    //     price : sum,
-    //     count : x.count
-                
-    // })
-      
     })  
 
 
@@ -66,8 +60,9 @@ function ShowAlert()
         <td>
         <input type="number" id = "count_cc" value = "${x.count}" style="width: 45%; height: 40px;" onchange="calcCount()">
         </td>
-        <td>${Number(total_price)}</td>
-        <td> <button class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button></td>
+        <td>${x.price}</td>
+        <td>${x.price * x.count}</td>
+        <td> <button class="btn btn-danger" id = "btn_delete" onclick = "del(event)">DELETE</button></td>
     </tr>
         `
     });
@@ -75,11 +70,13 @@ function ShowAlert()
     let sum = 0;
     let count = 0;
     for (let item of basket) {
-        sum+= Number(basket.price)
+   
+        console.log(typeof(basket.total_price));
+        basket.total_price+= basket.total_price
         count+=item.count
     }
-    console.log(sum);
-    document.querySelector('#common_price').innerHTML = sum
+    
+    document.querySelector('#common_price').innerHTML = basket.total_price
     document.querySelector('#common_count').innerHTML = count
     document.querySelector('#tbody').innerHTML = list
 

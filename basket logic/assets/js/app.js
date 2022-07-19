@@ -14,7 +14,8 @@ for (let btn of buttons) {
         let product_img = event.target.parentElement.previousElementSibling.src
         let prodcut_name = event.target.previousElementSibling.previousElementSibling.innerText
         let product_price = event.target.previousElementSibling.innerText
-
+      
+        // ?
         let existProduct = basket.find(x => x.id === product_id);
 
         if(existProduct === undefined)
@@ -24,8 +25,9 @@ for (let btn of buttons) {
             name:prodcut_name,
             img : product_img,
             price : product_price,
-            count : 1
-
+            count : 1,
+            total_price : product_price * 1
+            
         })
         }
         else{
