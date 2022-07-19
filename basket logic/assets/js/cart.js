@@ -5,31 +5,21 @@ basket.forEach(x => {
     localStorage.setItem('basket',JSON.stringify(basket))
 });
 
-
+function del(event)
+{
+  console.log();        
+}
 
 var delete_btns = document.querySelectorAll('#btn_delete')
     
-function calcCount()
+function calcCount(el, productId)
 {
     let basket = JSON.parse(localStorage.getItem('basket'))
-    let input_count_value = document.querySelector('#count_cc').value;
+    let input_count_value = +el.value;
 
-    basket.forEach(x => {
-        x.count = 0;
-        
-        
-       
+    let product = basket.find(p => p.id == productId);
 
-        x.count = Number(input_count_value);
-        
-        let total_price = x.count * x.price
-        x.total_price = total_price
-        basket.push()
-        
-    })  
-
-
-
+    product.count = input_count_value;
 
     localStorage.setItem('basket',JSON.stringify(basket))
     ShowAlert(); 
@@ -53,12 +43,12 @@ function ShowAlert()
         list+= `
         <tr>
         <td>${x.id}</td>
-        <td class = "w-40">
+        <td class = "w-40">     
             <img src="${x.img}" alt="">
         </td>
         <td>${x.name}</td>
         <td>
-        <input type="number" id = "count_cc" value = "${x.count}" style="width: 45%; height: 40px;" onchange="calcCount()">
+        <input type="number" id = "count_cc" value = "${x.count}" style="width: 45%; height: 40px;" onchange="calcCount(event.target, ${x.id})">
         </td>
         <td>${x.price}</td>
         <td>${x.price * x.count}</td>
@@ -69,14 +59,14 @@ function ShowAlert()
 
     let sum = 0;
     let count = 0;
+
     for (let item of basket) {
    
-        console.log(typeof(basket.total_price));
-        basket.total_price+= basket.total_price
-        count+=item.count
+        sum += item.total_price
+        count += item.count
     }
     
-    document.querySelector('#common_price').innerHTML = basket.total_price
+    document.querySelector('#common_price').innerHTML = sum
     document.querySelector('#common_count').innerHTML = count
     document.querySelector('#tbody').innerHTML = list
 
