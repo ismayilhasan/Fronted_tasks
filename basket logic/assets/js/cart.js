@@ -5,13 +5,21 @@ basket.forEach(x => {
     localStorage.setItem('basket',JSON.stringify(basket))
 });
 
-function del(event)
+function del(element,prodcutId)
 {
-  console.log();        
+    let basket = JSON.parse(localStorage.getItem('basket'))
+   
+
+    let ProductIndex = basket.findIndex((p) => p.id == prodcutId);
+    basket.splice(ProductIndex, 1);
+   
+    localStorage.setItem('basket',JSON.stringify(basket))
+    element.parentElement.parentElement.remove()
+   
+
 }
 
-var delete_btns = document.querySelectorAll('#btn_delete')
-    
+
 function calcCount(el, productId)
 {
     let basket = JSON.parse(localStorage.getItem('basket'))
@@ -52,7 +60,7 @@ function ShowAlert()
         </td>
         <td>${x.price}</td>
         <td>${x.price * x.count}</td>
-        <td> <button class="btn btn-danger" id = "btn_delete" onclick = "del(event)">DELETE</button></td>
+        <td> <button class="btn btn-danger" id = "btn_delete" onclick = "del(event.target,${x.id})">DELETE</button></td>
     </tr>
         `
     });
