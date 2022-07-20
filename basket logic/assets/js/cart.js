@@ -1,9 +1,9 @@
 let basket =  JSON.parse(localStorage.getItem('basket'))
-let total_price = 0;
-basket.forEach(x => {
-    total_price = x.price
-    localStorage.setItem('basket',JSON.stringify(basket))
-});
+// let total_price = 0;
+// basket.forEach(x => {
+//     total_price = x.price * x.count
+//     localStorage.setItem('basket',JSON.stringify(basket))
+// });
 
 function del(element,prodcutId)
 {
@@ -70,7 +70,7 @@ function ShowAlert()
 
     for (let item of basket) {
    
-        sum += item.total_price
+        sum += item.count * item.price
         count += item.count
     }
     
